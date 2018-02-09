@@ -205,51 +205,6 @@
             android:exported="true" >
         </activity-alias>
 
-        <activity android:name="com.android.music.VideoBrowserActivity"
-            android:taskAffinity="android.task.video"
-            android:label="@string/videobrowserlabel"
-            android:icon="@drawable/app_video"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.PICK" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="vnd.android.cursor.dir/video"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.SEARCH" />
-            </intent-filter>
-            <meta-data android:name="android.app.searchable"
-                android:resource="@xml/searchable_video"/>
-        </activity>
-        <activity android:name="com.android.music.MediaPickerActivity"
-                android:label="@string/mediapickerlabel" android:exported="false">
-<!--
-            <intent-filter>
-                <action android:name="android.intent.action.PICK" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="media/*"/>
-                <data android:mimeType="audio/*"/>
-                <data android:mimeType="application/ogg"/>
-                <data android:mimeType="application/x-ogg"/>
-                <data android:mimeType="video/*"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.GET_CONTENT" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.OPENABLE" />
-                <data android:mimeType="media/*"/>
-                <data android:mimeType="audio/*"/>
-                <data android:mimeType="application/ogg"/>
-                <data android:mimeType="application/x-ogg"/>
-                <data android:mimeType="video/*"/>
-            </intent-filter>
--->
-        </activity>
         <activity android:name="com.android.music.MusicPicker"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:label="@string/music_picker_title" android:exported="true">

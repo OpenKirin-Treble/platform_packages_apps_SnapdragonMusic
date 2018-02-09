@@ -31,7 +31,7 @@
 <Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
    android:layout_width="match_parent"
     android:layout_height="80dp"
-    android:background="#f57f17"
+    android:background="@color/app_theme_color"
     android:elevation="4dp"
     android:paddingTop="24dp"
     android:paddingStart="-8dp"

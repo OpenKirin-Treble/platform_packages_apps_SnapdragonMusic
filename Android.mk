@@ -26,8 +26,6 @@ LOCAL_AAPT_FLAGS := \
         --extra-packages android.support.v7.appcompat \
         --extra-packages android.support.design
 
-LOCAL_VENDOR_MODULE := true
-
 include $(BUILD_PACKAGE)
 
 # Use the folloing include to make our test apk.
